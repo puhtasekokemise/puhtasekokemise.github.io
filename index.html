@@ -1,51 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+ 
+    <title>Muotoilija - Product designer</title>
+    <link rel="stylesheet" href="style.css?v=1.4.2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-      <header>
-        <h1>My Portfolio</h1>
-        <nav>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
 
-      <section id="about" class="card">
-        <h2>About Me</h2>
-        <p>I am a web developer building modern, responsive, accessible experiences.</p>
-      </section>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">Work</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>-->
 
-      <section id="projects" class="card">
-        <h2>Featured Projects</h2>
+    <div id="flex-row-lead">
+        <!--<div class="column-language">🇫🇮<a href="www.akuankka.fi">Suomeksi</a></div>-->
+        <!--<div class="column-language">🇫🇮<a href="www.akuankka.fi">Suomeksi</a></div>-->
+      <p id="lead">The product and design work of Santeri Hämäläinen</p> 
+      </div>
+      
+
+    <!-- Musicinfo -->
+    <div class="flex-row">
+    <div class="column">
+        <h2>Musicinfo</h2>
         <ul>
-          <li>Project A - Responsive Portfolio</li>
-          <li>Project B - JavaScript Game</li>
-          <li>Project C - API Dashboard</li>
+            <li>AI powered SaaS distribution and promotion platform for independent artists and record labels.</li>
+            <li>Design based on creative innovations of multidisciplinary team, user research and digital analytics.</li>
+            <li>Musicians from over 100 countries have distributed over 54,000 music tracks to global music services such as Spotify, Netease and Deezer through Musicinfo.</li>
         </ul>
-      </section>
-
-      <section id="contact" class="card">
-        <h2>Contact</h2>
-        <p>Reach me at <a href="mailto:you@example.com">you@example.com</a>.</p>
-      </section>
-
-      <div id="alert-area" class="card" style="display: none;"></div>
-
-      <button id="action-btn">Show Message</button>
-      <button id="theme-btn">Toggle Theme</button>
-
-      <footer>
-        <p>© 2026 My Portfolio</p>
-      </footer>
+        <!-- <a href="musicinfo.html"><button class="button">Read more</button></a>-->
     </div>
+    
+    <div class="column-image">
+        <img src="images/musicinfoDistrMobileandDesktop.png">
+    </div>
+      </div>
 
-    <script src="script.js"></script>
+    <!-- VRT Finland -->
+    <div class="flex-row-reverse">
+        <div class="column">
+            <img src="images/vrt.png">
+        </div>
+        <div class="column">
+            <h2>VRT Finland</h2>
+            <ul>
+                <li>A mobile app for harbor workers designed to manage and monitor harbor systems efficiently while working on-site.</li>
+                <li>Design based on harbor worker interviews and discussions with the client.</li>
+                <li>Aestethic improvements to customers previous app iterations.</li>
+            </ul>
+            <!--<button class="button">Read more</button>-->
+            <!--<a href="muotoilija.com/musicinfo">read more</a>-->
+        </div>
+          </div>
+
+    <!-- Tietoevry -->
+    <div class="flex-row">
+        <div class="column">
+            <h2>Tietoevry</h2>
+            <ul>
+                <li>Logistics management app prototype for warehouse workers and managers.</li>
+                <li>Design created in close collaboration with client Product Owners and End Users.</li>
+                <li>Prototype was successfully used for applying funding from company board and creating an open tender for application development.</li>
+            </ul>
+           <!-- <a href="tietoevry.html"><button class="button">Read more</button></a> -->
+            <!--<a href="muotoilija.com/musicinfo">read more</a>-->
+        </div>
+        <div class="column">
+            <img id="img_tieto" src="images/tieto1.jpg">
+        </div>
+          </div>
+
+    <!-- Family in Music -->
+    <div class="flex-row-reverse">
+        <div class="column-image">
+            <img src="images/faim.png">
+              </div>
+        <div class="column">
+            <h2>Family in Music</h2>
+            <ul>
+                <li>A platform for independent musicians and music industry professionals.</li>
+                <li>In this project I worked as a development lead and a feature owner for 6 months - I had a chance to work with and learn from world class designers.</li>
+                <li>Successfull implementation of social media features.</li>
+            </ul>
+            <!--<a href="muotoilija.com/musicinfo">read more</a>-->
+        </div>
+        </div>
+
+            <!-- Study project -->
+    <div class="flex-row">
+        <div class="column">
+            <h2>Study project - Circular economy</h2>
+            <ul>
+                <li>Aalto University design team project.</li>
+                <li>Creating life-centred user journeys for reusable food, beverage and e-commerce packaging systems.</li>
+                <li>Deep learning of life-centred service design and systems thinking principles.</li>
+            </ul>
+           <!-- <a href="tietoevry.html"><button class="button">Read more</button></a> -->
+            <!--<a href="muotoilija.com/musicinfo">read more</a>-->
+        </div>
+        <div class="column">
+            <img id="img_tieto" src="images/ClubZero-20.jpg">
+            <p style="font-style: italic">image credit: CLUBZERØ</p>
+        </div>
+          </div>
+
+         <!-- About -->
+<div id="flex-row-abouttia">
+    <div id="flex-row-about">
+        <div id="column-about">
+            <h2 style="color: #ffffff;">About</h2>
+            <p style="color: #ffffff;">I'm a designer and product manager with 8+ years experience from developing digital products. Also a semi-professional music producer and composer. Master of Arts degree from The University of Jyväskylä. Please don't hesitate to contact me - let's chat and see what we can build together.</p>
+            <!--<a href="muotoilija.com/musicinfo">read more</a>-->
+        </div>
+        <div class="column-image">
+            <img id="img_santeri" src="images/santericv.jpeg">
+            
+        </div>
+
+          </div>
+
+        
+
+    <!-- Dokkari 
+    <div class="row">
+        <div class="column">
+            <h2>Dokkari.fi</h2>
+            <p>Musicinfo is a music distribution and promotion platform for independent artists and record labels. Over 54,000 music tracks have been distributed to global music services such as Spotify, Netease and Deezer through Musicinfo</p>
+        </div>
+        <div class="column">liibalaaba</div>
+          </div>-->
+    <!--
+    <h4>This website have been built so that it would destroy environment as little as possible:</h4>
+    <ul>
+        <li>The website is made with basic HTML and CSS</li>
+        <li>The website uses system fonts</li>
+        <li>Images are first loaded in small size - they can be enlarged if needed</li>
+        <li>Content is divided into separate pages to reduce unecessary website loading size</li>
+    </ul>-->
+<div class="footer">
+            <p style="text-align: center; color: #ffffff;">Contact: santeri.hamalainen@muotoilija.com</p>
+            <p style="text-align: center; color:#ffffff;"><a href="https://www.linkedin.com/in/santerihamalainen/"><i class="fa-brands fa-linkedin" style="font-size: 30px; text-align: center; color: #ffffff;"></i></a></p>
+        </div>
+        </div>
+
+        <!--
+        <div class="column">
+            <a href="https://www.linkedin.com/in/santerihamalainen/"><i class="fa-brands fa-linkedin-in" style="font-size: 30px; text-align: center;"></i></a>
+        </div>
+          </div>-->
+
+    
 </body>
 </html>
